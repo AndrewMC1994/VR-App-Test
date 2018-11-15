@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Shopping</title>
+    <title>VR Test</title>
     <meta name="description" content="Shopping - A-Frame">
     <script src="js/aframe-master.js"></script>
   </head>
@@ -9,11 +9,11 @@
     <a-scene background="color: #ECECEC">
       <a-assets>
         <a-asset-item id="3dmodel" src="model/AlbertClock.dae"></a-asset-item>
-        <img id="fall" src="img/fall.svg">
+        <img id="landmark" src="img/landmark.svg">
         <img id="goggles" src="img/goggles.png">
-        <img id="height" src="img/height.svg">
+        <img id="height" src="img/height.png">
         <img id="shadow2" src="img/radial-shadow-2.png">
-        <img id="shoes" src="img/shoes.png">
+        <img id="gallery" src="img/gallery.svg">
       </a-assets>
 
       <a-entity id="model" position="-0.1 0 -3.5" animation="property: rotation; from: 0 -30 0; to: 0 330 0; dur: 15000; easing: linear; loop: true">
@@ -21,7 +21,7 @@
         <a-image src="#shadow2" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
       </a-entity>
 
-      <a-image id="height" src="#height" width="8" height="6" scale="0.2 0.2 0.2"
+      <a-image id="height" src="#height" width="7.5" height="8" scale="0.2 0.2 0.2"
                animation="property: position; from: 0 2.8 -6; to: 2.25 2.8 -6; delay: 1000; dur: 1000"></a-image>
 
       <a-cylinder id="goggles" color="#101010" height="0.02" radius="0.8"
@@ -30,11 +30,11 @@
         <a-image src="#goggles" width="2" height="1" rotation="90 0 0" position="0 -.05 0" scale=".4 .4 .4"></a-image>
       </a-cylinder>
 
-      <a-curvedimage id="stereoscopic-fall-collection-text" src="#fall" radius="5.7"
-                     theta-length="23" height=".45" position="0 1 0" scale=".4 .4 .4"
+      <a-curvedimage id="landmark" src="#landmark" radius="5.7"
+                     theta-length="25" height=".45" position="0 1 0" scale=".4 .4 .4"
                      animation="property: rotation; from: 0 180 0; to: 0 210 0; delay: 750; dur: 1000"></a-curvedimage>
 
-      <a-curvedimage id="shoes" src="#shoes" radius="5.7" theta-length="18" height=".8" position="0 0.9 0" scale=".4 .4 .4"
+       <a-curvedimage id="gallery" src="#gallery" radius="5.7" theta-length="17" height=".8" position="0 0.98 0" scale=".4 .4 .4"
                      animation="property: rotation; from: 0 180 0; to: 0 130 0; delay: 750; dur: 1000"></a-curvedimage>
 
       <a-cylinder position="0 0.5 0" radius="4" height="1.6" side="back" open-ended="true" color="#FFF"></a-cylinder>
